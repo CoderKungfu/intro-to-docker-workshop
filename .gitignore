@@ -1,0 +1,4 @@
+node_modules
+exercise2/Dockerfile
+exercise2/package-lock.json
+exercise4/postgres_data/*

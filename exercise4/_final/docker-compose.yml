@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    image: postgres:9.5
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=blog_db
+      - POSTGRES_PASSWORD=sibeisecret
+  web:
+    build: .
+    image: rails_blog
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    # volumes:
+    #   - ./blog:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://blog_db:sibeisecret@db/blog_db
