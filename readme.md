@@ -3,7 +3,7 @@
 ## Installation
 
 1. Visit [https://www.docker.com/community-edition#/download](https://www.docker.com/community-edition#/download) and download Docker for Mac or Windows.
-2. Follow the instrcutions on the website to install Docker on your computer.
+2. Follow the instructions on the website to install Docker on your computer.
 3. Start `Docker`
 
 ## Verify your docker installation
