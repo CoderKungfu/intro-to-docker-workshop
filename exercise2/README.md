@@ -89,10 +89,6 @@
 
 	COPY . /app
 
-	RUN npm config set proxy http://proxy.singaporepower.com.sg:8080
-	RUN npm config set https-proxy http://proxy.singaporepower.com.sg:8080
-	RUN npm config set strict-ssl false
-
 	RUN npm install
 
 	RUN npm install http-server -g
@@ -147,7 +143,7 @@
 	```
 	http-server /app -p 8080
 	```
-	
+
 ## Further Reading
 
 - Dockerfile reference ([https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/))
