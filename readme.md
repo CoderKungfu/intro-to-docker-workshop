@@ -1,12 +1,12 @@
 # Workshop: Introduction to Docker
 
-## Installation
+## Installation for Windows 10 Professional and MacOS
 
 1. Visit [https://www.docker.com/community-edition#/download](https://www.docker.com/community-edition#/download) and download Docker for Mac or Windows.
 2. Follow the instructions on the website to install Docker on your computer.
 3. Start `Docker`
 
-## Verify your docker installation
+### Verify your docker installation
 
 1. Open your `Console`.
 
@@ -19,7 +19,12 @@
 3. Type: `docker info`
 
 	This should show you a wall of text with info about your Docker daemon (or your Docker installation).
-	
+
+## Installation for Windows 10 Home Edition
+
+1. Visit https://docs.docker.com/toolbox/toolbox_install_windows/ to follow the instruction to install Docker Toolbox.
+
+At the end of the article, make sure **Step 3: Verify your installation** is completed.
 
 ## Contributors
 
