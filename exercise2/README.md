@@ -89,10 +89,6 @@
 
 	COPY . /app
 
-	RUN npm config set proxy http://proxy.singaporepower.com.sg:8080
-	RUN npm config set https-proxy http://proxy.singaporepower.com.sg:8080
-	RUN npm config set strict-ssl false
-
 	RUN npm install
 
 	RUN npm install http-server -g
@@ -117,6 +113,8 @@
 4. Visit the site with your web browser: [http://localhost:8080](http://localhost:8080)
 
 	* *__Note:__ If you have any issues accessing port 8080, you might want to check if you have any other service / app using that port number.*
+
+	* *__Windows 10 Home Users:__ You will have to access the app using the docker-machine's host ip address and your app's export port instead. This is usually [http://192.168.99.100:8080](http://192.168.99.100:8080).*
 
 5. Press `Ctrl`+`c` to stop the container.
 
