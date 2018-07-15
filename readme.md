@@ -25,6 +25,8 @@
 
 	This should show you a wall of text with info about your Docker daemon (or your Docker installation).
 	
+## (Optional for W10 Users) Installing Docker in WSL ##
+Check [wsl-docker.md](wsl-docker.md).
 
 ## Contributors
 
