@@ -72,7 +72,7 @@
 	docker-compose up -d web
 	```
 
-6. Visit the website: [http://localhost:3000](http://localhost:3000)
+6. Visit the website: [http://localhost:3000](http://localhost:3000) or [http://192.168.99.100:3000](http://192.168.99.100:3000) for Windows 10 Home users.
 
 ## Lesson 2
 
@@ -116,7 +116,7 @@
 	rails db:migrate
 	```
 
-6. Visit the new page: [http://localhost:3000/posts](http://localhost:3000/posts)
+6. Visit the new page: [http://localhost:3000/posts](http://localhost:3000/posts) or [http://192.168.99.100:3000/posts](http://192.168.99.100:3000/posts) for Windows 10 Home users
 
 ## Further Readings
 
