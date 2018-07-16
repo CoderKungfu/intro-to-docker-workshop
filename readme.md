@@ -1,6 +1,6 @@
 # Workshop: Introduction to Docker
 
-## Installation for Windows 10 Professional and MacOS
+## Software Installation
 
 ### Windows 10 Pro / Mac OS X / Linux
 1. Visit [https://www.docker.com/community-edition#/download](https://www.docker.com/community-edition#/download) and download Docker for Mac or Windows.
@@ -11,7 +11,7 @@
 1. Visit [https://docs.docker.com/toolbox/toolbox_install_windows](https://docs.docker.com/toolbox/toolbox_install_windows) instead to download and install Docker Toolbox.
 2. Ensure that you've verified your docker toolbox installation in step 3 on that page. The Docker CLI should be installed and accessible via Git Bash, and all console/terminal commands should be run Git Bash.
 
-### (Optional for W10 Users) Installing Docker in WSL
+### (Optional for Windows 10 Users) Installing Docker in Windows Subsystem for Linux (WSL)
 
 Check [wsl-docker.md](wsl-docker.md).
 

@@ -1,4 +1,4 @@
-# (Optional) Making Docker Work With WSL
+# (Optional) Making Docker Work With Windows Subsystem for Linux (WSL)
 This section is not strictly needed for using Docker on Windows. However, heavy users of WSL may find this convenient... after all the set up is done.
 
 Note that if you have any symlinks in WSL, one of the following steps may render all of them inoperable and you will have to re-create those symlinks. This is due to an alteration of the WSL's directory structure.
@@ -35,7 +35,7 @@ sudo chmod +x /usr/local/bin/docker-compose```
 
 #### Getting your WSL Docker CLI to communicate with the Docker Daemon ####
 13. `nano ~/.bashrc` and add the following 3 lines to the bottom of the file.
-    - `export DOCKER_HOST=tcp://0.0.0.0:2376` 
+    - `export DOCKER_HOST=tcp://0.0.0.0:2376`
         - *__W10 Home Users:__ Use your docker host ip address from the previous section instead of `0.0.0.0` here*
     - `export DOCKER_CERT_PATH="/c/Users/<YOUR WINDOWS USER NAME HERE>/.docker/machine/certs"`
     - `export DOCKER_TLS_VERIFY=1`
