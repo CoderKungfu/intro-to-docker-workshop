@@ -118,34 +118,6 @@
 
 5. Press `Ctrl`+`c` to stop the container.
 
-## Lesson 4
-
-**Scenario** : Edit your codes and see it reflect on the container
-
-**Objective** : Teach Volume Mapping ( in preparation for development on docker )
-
-**Steps** :
-
-1. Start the container again with this new command:
-
-	```
-	docker run -v `pwd`:/app -p 8080:8080 docker_workshop
-	```
-
-2. Edit `index.html` and see it show up on the caddy web server.
-
-3. Stop and start the container in interactive mode:
-
-	```
-	docker run -v `pwd`:/app -it -p 8080:8080 docker_workshop bash
-	```
-
-4. Make changes to `index.html` and run this command:
-
-	```
-	http-server /app -p 8080
-	```
-
 ## Further Reading
 
 - Dockerfile reference ([https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/))
