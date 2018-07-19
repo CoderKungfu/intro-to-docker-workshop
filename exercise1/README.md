@@ -34,9 +34,10 @@ docker image ls
 ```
 docker container ls
 docker container ls --all
-docker container ls -aq
+docker container ls --quiet
+docker container ls -a -q
 docker ps
-docker ps --all
+docker ps -a
 ```
 
 ## Further Reading
