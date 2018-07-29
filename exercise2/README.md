@@ -28,7 +28,7 @@
 2. Run this command:
 
 	```
-	docker build -t docker_workshop .
+	docker build --tag docker_workshop .
 	```
 
 3. Start the new container
@@ -48,7 +48,7 @@
 1. Run this command:
 
 	```
-	docker ps -a
+	docker container ls --all
 	```
 
 	Take note of the `CONTAINER ID` of `docker_workshop`.
@@ -101,13 +101,13 @@
 2. Build the container:
 
 	```
-	docker build -t docker_workshop .
+	docker build --tag docker_workshop .
 	```
 
-3. Start the new container
+3. Start the new container, mapping host port 8080 to container port 8080:
 
 	```
-	docker run -p 8080:8080 docker_workshop
+	docker run --publish 8080:8080 docker_workshop
 	```
 
 4. Visit the site with your web browser: [http://localhost:8080](http://localhost:8080)
@@ -129,7 +129,7 @@
 1. Start the container again with this new command:
 
 	```
-	docker run -v `pwd`:/app -p 8080:8080 docker_workshop
+	docker run --volume `pwd`:/app --publish 8080:8080 docker_workshop
 	```
 
 2. Edit `index.html` and see it show up on the caddy web server.
@@ -137,7 +137,7 @@
 3. Stop and start the container in interactive mode:
 
 	```
-	docker run -v `pwd`:/app -it -p 8080:8080 docker_workshop bash
+	docker run -it --volume `pwd`:/app --publish 8080:8080 docker_workshop bash
 	```
 
 4. Make changes to `index.html` and run this command:
