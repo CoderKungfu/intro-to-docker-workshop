@@ -64,7 +64,7 @@ There are other type of networks beside Bridge
 The data in the containers are only removed when the containers are removed not when its stopped. 
 
 ```
-docker run -it --name='test-box' busybox sh
+docker run -it --name='test-box' busybox:1.28 sh
 touch test.txt
 
 docker start test-box
@@ -96,18 +96,18 @@ docker volume inspect test-vol
 ```
 
 ```
-docker run -it -v test-vol:/app --rm busybox sh
+docker run -it -v test-vol:/app --rm busybox:1.28 sh
 touch /app/test.txt
 ```
 
 ```
-docker run -it -v test-vol:/app --rm busybox ls /app
+docker run -it -v test-vol:/app --rm busybox:1.28 ls /app
 ```
 
 Using Bind Mounts
 
 ```
-docker run -it -v `pwd`:/app busybox sh
+docker run -it -v `pwd`:/app busybox:1.28 sh
 ```
 
 Take note that if there is existing files in the container, it will be hidden away. Note that the sbin is hidden away. 
@@ -115,7 +115,7 @@ Take note that if there is existing files in the container, it will be hidden aw
 This can be useful when you want to mount codes into the a existing image without rebuilding it.
 
 ```
-docker run -it -v `pwd`:/usr busybox sh
+docker run -it -v `pwd`:/usr busybox:1.28 sh
 ```
 
 
